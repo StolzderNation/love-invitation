@@ -22,21 +22,21 @@ const DinnerOptions = () => {
   {
     name: "Flax & Kale",
     location: "Carrer de los Tallers, 74",
-    visitLink: "https://flaxandkale.com/",
+    visitLink: "https://maps.app.goo.gl/f84wPMDYJmtn2fVb8?g_st=aw",
     calendarLink:
     "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Flax+%26+Kale&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Carrer+de+los+Tallers,+74,+08001+Barcelona"
   },
   {
     name: "Al Arabia",
     location: "Carrer d'en Gignàs, 16",
-    visitLink: "https://alarabiabcn.com/",
+    visitLink: "https://maps.app.goo.gl/ZSVQxo8emZabk7Fe6?g_st=aw",
     calendarLink:
     "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Al+Arabia&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Carrer+d%27en+Gign%C3%A0s,+16,+08002+Barcelona"
   },
   {
     name: "Les Quinze Nits",
     location: "Plaça Reial, 6",
-    visitLink: "https://www.lesquinzenits.com/",
+    visitLink: "https://maps.app.goo.gl/51gNAWEAq4NEN7Hs5?g_st=aw",
     calendarLink:
     "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Les+Quinze+Nits&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Pla%C3%A7a+Reial,+6,+08002+Barcelona"
   }];
