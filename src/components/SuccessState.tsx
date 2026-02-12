@@ -82,9 +82,9 @@ const ExperienceOption = () =>
 <div className="text-center space-y-4">
     <div className="rounded-lg overflow-hidden shadow-md">
       <img
-      src={luminiscenseImage}
+
       alt="Luminiscense Show"
-      className="w-full h-48 object-cover" />
+      className="w-full h-48 object-cover" src="https://applications-media.feverup.com/image/upload/f_auto,w_720,h_720/fever2/plan/photo/2c080ed8-b015-11f0-93e1-a2d06967b13e.png" />
 
     </div>
     <div>
