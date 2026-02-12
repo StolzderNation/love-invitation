@@ -19,14 +19,14 @@ export const LandingState = ({ onYes }: LandingStateProps) => {
       position: "fixed",
       left: `${x}px`,
       top: `${y}px`,
-      transition: "all 0.3s ease",
+      transition: "all 0.3s ease"
     });
   };
 
   const handleNoClick = () => {
     toast("Nice try! Choose a different option 😉", {
       position: "top-center",
-      duration: 3000,
+      duration: 3000
     });
   };
 
@@ -38,17 +38,17 @@ export const LandingState = ({ onYes }: LandingStateProps) => {
 
       <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
         <img
-          src={invitationImage}
+
           alt="Valentine Invitation"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" src="/lovable-uploads/73c223d8-05cb-444a-a566-26c3910e01e0.jpg" />
+
       </div>
 
       <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-center w-full max-w-md">
         <Button
           onClick={onYes}
-          className="bg-lover-red hover:bg-red-600 text-white px-8 py-6 text-xl rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 w-full md:w-auto animate-pulse"
-        >
+          className="bg-lover-red hover:bg-red-600 text-white px-8 py-6 text-xl rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 w-full md:w-auto animate-pulse">
+
           Yes, I will! ❤️
         </Button>
         <Button
@@ -56,11 +56,11 @@ export const LandingState = ({ onYes }: LandingStateProps) => {
           onMouseEnter={handleNoHover}
           onClick={handleNoClick}
           style={noBtnStyle}
-          className="border-2 border-lover-red text-lover-red hover:bg-lover-pink hover:text-lover-red px-8 py-6 text-xl rounded-full w-full md:w-auto transition-all duration-300"
-        >
+          className="border-2 border-lover-red text-lover-red hover:bg-lover-pink hover:text-lover-red px-8 py-6 text-xl rounded-full w-full md:w-auto transition-all duration-300">
+
           No
         </Button>
       </div>
-    </div>
-  );
+    </div>);
+
 };
