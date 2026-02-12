@@ -3,15 +3,15 @@ import {
   Card,
   CardDescription,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+  CardTitle } from
+"@/components/ui/card";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+  DialogTrigger } from
+"@/components/ui/dialog";
 import { Gift, Heart, Utensils } from "lucide-react";
 import celebrationImage from "@/assets/celebration-image.jpg";
 import luminiscenseImage from "@/assets/luminiscense.jpg";
@@ -19,73 +19,73 @@ import massageImage from "@/assets/massage-voucher.jpg";
 
 const DinnerOptions = () => {
   const options = [
-    {
-      name: "Flax & Kale",
-      location: "Carrer de los Tallers, 74",
-      visitLink: "https://flaxandkale.com/",
-      calendarLink:
-        "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Flax+%26+Kale&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Carrer+de+los+Tallers,+74,+08001+Barcelona",
-    },
-    {
-      name: "Al Arabia",
-      location: "Carrer d'en Gignàs, 16",
-      visitLink: "https://alarabiabcn.com/",
-      calendarLink:
-        "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Al+Arabia&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Carrer+d%27en+Gign%C3%A0s,+16,+08002+Barcelona",
-    },
-    {
-      name: "Les Quinze Nits",
-      location: "Plaça Reial, 6",
-      visitLink: "https://www.lesquinzenits.com/",
-      calendarLink:
-        "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Les+Quinze+Nits&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Pla%C3%A7a+Reial,+6,+08002+Barcelona",
-    },
-  ];
+  {
+    name: "Flax & Kale",
+    location: "Carrer de los Tallers, 74",
+    visitLink: "https://flaxandkale.com/",
+    calendarLink:
+    "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Flax+%26+Kale&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Carrer+de+los+Tallers,+74,+08001+Barcelona"
+  },
+  {
+    name: "Al Arabia",
+    location: "Carrer d'en Gignàs, 16",
+    visitLink: "https://alarabiabcn.com/",
+    calendarLink:
+    "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Al+Arabia&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Carrer+d%27en+Gign%C3%A0s,+16,+08002+Barcelona"
+  },
+  {
+    name: "Les Quinze Nits",
+    location: "Plaça Reial, 6",
+    visitLink: "https://www.lesquinzenits.com/",
+    calendarLink:
+    "https://www.google.com/calendar/render?action=TEMPLATE&text=Cena+en+Les+Quinze+Nits&dates=20260214T183000Z/20260214T203000Z&details=Cena+rom%C3%A1ntica+con+Andr%C3%A9s&location=Pla%C3%A7a+Reial,+6,+08002+Barcelona"
+  }];
+
 
   return (
     <div className="space-y-4">
       <p className="text-center text-gray-600 mb-4">
         Choose your favorite spot for our date night!
       </p>
-      {options.map((opt, i) => (
-        <div
-          key={i}
-          className="p-4 border rounded-lg hover:bg-lover-pink/20 transition-colors flex justify-between items-center group"
-        >
+      {options.map((opt, i) =>
+      <div
+        key={i}
+        className="p-4 border rounded-lg hover:bg-lover-pink/20 transition-colors flex justify-between items-center group">
+
           <div>
             <h3 className="font-bold text-gray-800">{opt.name}</h3>
             <a
-              href={opt.visitLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-lover-red hover:underline"
-            >
+            href={opt.visitLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-lover-red hover:underline">
+
               Visit Website
             </a>
           </div>
           <Button
-            asChild
-            size="sm"
-            className="bg-lover-red hover:bg-red-600 text-white"
-          >
+          asChild
+          size="sm"
+          className="bg-lover-red hover:bg-red-600 text-white">
+
             <a href={opt.calendarLink} target="_blank" rel="noopener noreferrer">
               Choose
             </a>
           </Button>
         </div>
-      ))}
-    </div>
-  );
+      )}
+    </div>);
+
 };
 
-const ExperienceOption = () => (
-  <div className="text-center space-y-4">
+const ExperienceOption = () =>
+<div className="text-center space-y-4">
     <div className="rounded-lg overflow-hidden shadow-md">
       <img
-        src={luminiscenseImage}
-        alt="Luminiscense Show"
-        className="w-full h-48 object-cover"
-      />
+      src={luminiscenseImage}
+      alt="Luminiscense Show"
+      className="w-full h-48 object-cover" />
+
     </div>
     <div>
       <h3 className="text-xl font-bold mb-2">LUMINISCENSE</h3>
@@ -94,25 +94,25 @@ const ExperienceOption = () => (
       </p>
       <Button asChild className="w-full bg-lover-red hover:bg-red-600">
         <a
-          href="https://feverup.com/m/429795"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        href="https://feverup.com/m/429795"
+        target="_blank"
+        rel="noopener noreferrer">
+
           View Details
         </a>
       </Button>
     </div>
-  </div>
-);
+  </div>;
 
-const SurpriseOption = () => (
-  <div className="text-center space-y-4">
+
+const SurpriseOption = () =>
+<div className="text-center space-y-4">
     <div className="rounded-lg overflow-hidden shadow-md border-2 border-gold-500">
       <img
-        src={massageImage}
-        alt="Massage Voucher"
-        className="w-full object-cover"
-      />
+      src={massageImage}
+      alt="Massage Voucher"
+      className="w-full object-cover" />
+
     </div>
     <div>
       <h3 className="text-xl font-bold mb-2 text-lover-red">Romantic Massage</h3>
@@ -125,21 +125,21 @@ const SurpriseOption = () => (
         </p>
       </div>
     </div>
-  </div>
-);
+  </div>;
+
 
 const PrizeCard = ({
   number,
   title,
   icon,
-  content,
-}: {
-  number: number;
-  title: string;
-  icon: React.ReactNode;
-  content: React.ReactNode;
-}) => (
-  <Dialog>
+  content
+
+
+
+
+
+}: {number: number;title: string;icon: React.ReactNode;content: React.ReactNode;}) =>
+<Dialog>
     <DialogTrigger asChild>
       <Card className="cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-lover-pink bg-white/80 backdrop-blur-sm">
         <CardHeader>
@@ -159,8 +159,8 @@ const PrizeCard = ({
       </DialogHeader>
       <div className="mt-4">{content}</div>
     </DialogContent>
-  </Dialog>
-);
+  </Dialog>;
+
 
 export const SuccessState = () => {
   return (
@@ -171,10 +171,10 @@ export const SuccessState = () => {
 
       <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform hover:rotate-2 transition-transform duration-300">
         <img
-          src={celebrationImage}
+
           alt="Celebration"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" src="/lovable-uploads/4682c422-f50c-4d0f-a9d6-c289c603c768.jpg" />
+
       </div>
 
       <div className="space-y-6 w-full max-w-4xl">
@@ -187,22 +187,22 @@ export const SuccessState = () => {
             number={1}
             title="Dinner"
             icon={<Utensils className="w-8 h-8 text-lover-red" />}
-            content={<DinnerOptions />}
-          />
+            content={<DinnerOptions />} />
+
           <PrizeCard
             number={2}
             title="Experience"
             icon={<Heart className="w-8 h-8 text-lover-red" />}
-            content={<ExperienceOption />}
-          />
+            content={<ExperienceOption />} />
+
           <PrizeCard
             number={3}
             title="Surprise"
             icon={<Gift className="w-8 h-8 text-lover-red" />}
-            content={<SurpriseOption />}
-          />
+            content={<SurpriseOption />} />
+
         </div>
       </div>
-    </div>
-  );
+    </div>);
+
 };
